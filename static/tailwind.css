@@ -1,0 +1,17 @@
+@tailwind base;
+html {
+  font-family: 'Livvic', sans-serif;
+  font-weight: 600;
+}
+h1,
+h2,
+h3 {
+  @apply font-bold text-white;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+@tailwind components;
+@tailwind utilities;
