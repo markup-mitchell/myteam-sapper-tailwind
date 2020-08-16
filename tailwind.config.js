@@ -11,8 +11,8 @@ module.exports = {
         s5: '#002529'
       },
       fontSize: {
-        '7xl': '100px'
-      }
+        '7xl': '6.25rem'
+      } 
     }
   },
   variants: {},

@@ -17,29 +17,34 @@
 	<img src={image2} class="absolute left-0 -ml-24 hidden xl:block" alt="">
 <StandardPadding>
 
-<div class="flex flex-col lg:flex-row justify-between lg:items-end">
+<div class="flex flex-col lg:flex-row justify-between h-full">
 	
 	<h1 class="leading-none text-center lg:text-left md:text-6xl lg:w-full lg:text-7xl min-w-1/3">Find the <br /> <span class="whitespace-no-wrap">best <span class="text-p2">talent</span></span></h1>
-	<p class="text-white text-lg mt-5 lg:mt-0 md:mt-6 leading-relaxed text-center lg:min-w-2/3 lg:text-left lg:ml lg:max-w-2xl">
-		Finding the right people and building high performing teams can be hard. Most companies aren’t tapping into the abundance of global talent. We’re about to change that.
-	</p>
+
+	<div class="flex flex-col justify-between">
+		<div class="hidden lg:block w-12 h-1 bg-s1"></div>
+		<p class="text-white text-lg mt-5 lg:mt-0 md:mt-6 leading-relaxed text-center lg:min-w-2/3 lg:text-left lg:ml lg:max-w-2xl">
+			Finding the right people and building high performing teams can be hard. Most companies aren’t tapping into the abundance of global talent. We’re about to change that.
+		</p>
+	</div>
 </div>
 </StandardPadding>		
 	<img src={image} alt="" class="mx-2 mt-24 ">
 </div>
-<section class="bg-s4 relative overflow-hidden">
+<section class="bg-s4 relative overflow-hidden pt-16  md:pt-24 pb-16 md:pb-32 lg:pt-32 lg:pb-40">
+	<img src={image3} alt="" class="absolute top-0 right-0 lg:bottom-0 -mr-24">
 	<StandardPadding>
 
 		<div class="flex flex-col lg:flex-row lg:justify-between">
 			<div class="flex items-start max-w-md lg:max-w-xs">
-				<div class="flex flex-col pt-16">
+				<div class="flex flex-col">
 					<div class="w-12 h-1 bg-p2"></div>
-					<h2 class="text-3xl pt-8 leading-8 lg:leading-none pr-24 sm:pr-0  lg:text-4xl ">Build &  manage distributed teams like no  one else.</h2>
+					<h2 class="text-3xl mt-8 lg:mt-12 leading-8 lg:leading-none pr-24 sm:pr-0  lg:text-4xl ">Build &  manage distributed teams like no  one else.</h2>
 
 				</div>
-				<img src={image3} alt="" class="absolute right-0 lg:bottom-0 -mr-24">
 			</div>
-			<div class="flex flex-col mt-12 lg:mb-32 lg:max-w-xl">
+			
+			<div class="flex flex-col mt-8 lg:max-w-xl">
 				<Subheading 
 					icon="person"
 					heading="Experienced Individuals"
