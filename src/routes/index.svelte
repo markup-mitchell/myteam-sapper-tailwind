@@ -32,7 +32,8 @@
 	<img src={image} alt="" class="mx-2 mt-24 ">
 </div>
 <section class="bg-s4 relative overflow-hidden pt-16  md:pt-24 pb-16 md:pb-32 lg:pt-32 lg:pb-40">
-	<img src={image3} alt="" class="absolute top-0 right-0 lg:bottom-0 -mr-24">
+	<!-- need to do inset-y-auto jiggery pokery because top-0 not being overriden -->
+	<img src={image3} alt="" class="absolute right-0 inset-y-0 lg:bottom-0 lg:inset-y-auto -mr-24">
 	<StandardPadding>
 
 		<div class="flex flex-col lg:flex-row lg:justify-between">
