@@ -45,6 +45,22 @@
 					heading="Experienced Individuals"
 					copy="Our network is made up of highly experienced professionals who are passionate about what they do."
 				/>
+				<div class="mt-8">
+
+					<Subheading 
+					icon="cog"
+					heading="Easy to Implement"
+					copy="Our processes have been refined over years of implementation meaning our teams always deliver."
+					/>
+				</div>
+				<div class="mt-8">
+
+					<Subheading 
+					icon="chart"
+					heading="Enhanced Productivity"
+					copy="Our customized platform with in-built analytics helps you manage your distributed teams."
+					/>
+				</div>
 			</div>
 		</div>
 	</StandardPadding>
