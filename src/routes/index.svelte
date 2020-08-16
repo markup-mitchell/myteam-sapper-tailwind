@@ -1,8 +1,10 @@
 <script>
 	import StandardPadding from '../components/StandardPadding.svelte';
+	import Subheading from '../components/Subheading.svelte';
 	let image = "images/bg-pattern-home-2.svg";
 	let image2 = "images/bg-pattern-home-1.svg";
 	let image3 = "images/bg-pattern-home-3.svg";
+	let person = "images/icon-person.svg";
 
 </script>
 
@@ -32,16 +34,17 @@
 			<div class="flex items-start">
 				<div class="flex flex-col pt-16">
 					<div class="w-12 h-1 bg-p2"></div>
-					<h2 class="text-3xl pt-8 leading-8 max-w-xs sm:max-w-lg">Build & <br class="sm:hidden"/> manage <br class="sm:hidden"/>distributed <br class="sm:hidden"/>teams like no  <br class="sm:hidden"/>one else.</h2>
+					<h2 class="text-3xl pt-8 leading-8 pr-24 sm:pr-0 max-w-md">Build &  manage distributed teams like no  one else.</h2>
 
 				</div>
 				<img src={image3} alt="" class="absolute right-0 -mr-24">
 			</div>
-			<div class="flex flex-col">
-				<p>media</p>
-				<p>media</p>
-				<p>media</p>
-				
+			<div class="flex flex-col mt-12">
+				<Subheading 
+					icon="person"
+					heading="Experienced Individuals"
+					copy="Our network is made up of highly experienced professionals who are passionate about what they do."
+				/>
 			</div>
 		</div>
 	</StandardPadding>
