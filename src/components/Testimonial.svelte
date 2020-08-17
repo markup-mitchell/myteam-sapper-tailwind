@@ -8,13 +8,9 @@
     let avatarImage = `images/avatar-${avatar}.jpg`; 
 </script>
 
-<style>
-
-</style>
-
-<div class="flex flex-col pt-8" style={`background-image:url(${quotes});background-repeat:no-repeat;background-position: center top;background-size: 20%;`}>
-    <blockquote class="text-base text-white text-center">
-        <p class="text-sm">
+<div  class="flex flex-col pt-10 mt-12" style={`background-image:url(${quotes});background-repeat:no-repeat;background-position: center top;`}>
+    <blockquote class="text-base text-white text-center w-full">
+        <p class="text-sm leading-relaxed">
             {quote}
         </p>
         <footer class="flex flex-col items-center">
