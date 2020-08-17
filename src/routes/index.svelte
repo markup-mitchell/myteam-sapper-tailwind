@@ -2,11 +2,13 @@
 	import StandardPadding from '../components/StandardPadding.svelte';
 	import Subheading from '../components/Subheading.svelte';
 	import Testimonial from '../components/Testimonial.svelte';
+	import GetStarted from '../components/GetStarted.svelte';
 	let image = "images/bg-pattern-home-2.svg";
 	let image2 = "images/bg-pattern-home-1.svg";
 	let image3 = "images/bg-pattern-home-3.svg";
 	let image4 = "images/bg-pattern-home-4-about-3.svg";
 	let image5 = "images/bg-pattern-home-5.svg";
+
 	let person = "images/icon-person.svg";
 
 </script>
@@ -31,7 +33,7 @@
 
 <div class="flex flex-col lg:flex-row justify-between h-full">
 	
-	<h1 class="leading-none text-center lg:text-left md:text-6xl lg:w-full lg:text-7xl min-w-1/3">Find the <br /> <span class="whitespace-no-wrap">best <span class="text-p2">talent</span></span></h1>
+	<h1 class="text-white leading-none text-center lg:text-left md:text-6xl lg:w-full lg:text-7xl min-w-1/3">Find the <br /> <span class="whitespace-no-wrap">best <span class="text-p2">talent</span></span></h1>
 
 	<div class="flex flex-col justify-between">
 		<div class="hidden lg:block w-12 h-1 bg-s1"></div>
@@ -51,7 +53,7 @@
 			<div class="flex items-start max-w-md lg:max-w-xs">
 				<div class="flex flex-col">
 					<div class="w-12 h-1 bg-p2"></div>
-					<h2 class="text-3xl mt-8 lg:mt-12 leading-8 lg:leading-none pr-24 sm:pr-0  lg:text-4xl ">Build &  manage distributed teams like no  one else.</h2>
+					<h2 class="text-white text-3xl mt-8 lg:mt-12 leading-8 lg:leading-none pr-24 sm:pr-0  lg:text-4xl ">Build &  manage distributed teams like no  one else.</h2>
 
 				</div>
 			</div>
@@ -88,7 +90,7 @@
 	<img src={image5} alt="" class="absolute bottom-0 right-0">
 	<StandardPadding>
 		
-		<h2 class="text-3xl lg:text-5xl leading-none text-center">
+		<h2 class="text-3xl lg:text-5xl leading-none text-center text-white">
 			Delivering real results for top companies. Some of our 
 			<span class="text-s1">
 				success stories.
@@ -116,4 +118,4 @@
 	</div>
 	</StandardPadding>
 </section>
-
+<GetStarted></GetStarted>
