@@ -12,9 +12,12 @@
 </script>
 
 <style>
+	@media (min-width: 1024px) {
+	
 	:global( .spacer > *+*) {
 		margin-left: 30px;
 	}
+}
 </style>
 
 <svelte:head>
