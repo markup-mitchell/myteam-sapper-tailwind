@@ -1,0 +1,31 @@
+<script>
+    export let quote;
+    export let avatar;
+    export let name;
+    export let jobTitle;
+
+    let quotes = 'images/icon-quotes.svg';
+    let avatarImage = `images/avatar-${avatar}.jpg`; 
+</script>
+
+<style>
+
+</style>
+
+<div class="flex flex-col pt-8" style={`background-image:url(${quotes});background-repeat:no-repeat;background-position: center top;background-size: 20%;`}>
+    <blockquote class="text-base text-white text-center">
+        <p class="text-sm">
+            {quote}
+        </p>
+        <footer class="flex flex-col items-center">
+            <p class="text-lg mt-4 text-s1">
+                {name}
+            </p>
+            <p class="text-sm font-medium italic leading-none mt-1">
+                {jobTitle}
+            </p>
+            <img src={avatarImage} alt={name} class="mt-4 rounded-full w-20 h-20 border-s6 border-2">
+        </footer>
+    </blockquote>
+</div>
+

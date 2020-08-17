@@ -1,6 +1,7 @@
 <script>
 	import StandardPadding from '../components/StandardPadding.svelte';
 	import Subheading from '../components/Subheading.svelte';
+	import Testimonial from '../components/Testimonial.svelte';
 	let image = "images/bg-pattern-home-2.svg";
 	let image2 = "images/bg-pattern-home-1.svg";
 	let image3 = "images/bg-pattern-home-3.svg";
@@ -71,5 +72,23 @@
 		</div>
 	</StandardPadding>
 
+</section>
+<section class="pt-32 md:pt-24 lg:pt-32 bg-s3">
+	<StandardPadding>
+
+		<h2 class="text-3xl lg:text-5xl leading-none text-center">
+			Delivering real results for top companies. Some of our 
+			<span class="text-s1">
+				success stories.
+			</span>
+		</h2>
+
+		<Testimonial 
+			quote='“The team perfectly fit the specialized skill set required. They focused on the most essential features helping us launch the platform eight months faster than planned.”'
+			name="Kady Baker"
+			jobTitle="Product Manager at Bookmark"
+			avatar="kady"
+		/>
+	</StandardPadding>
 </section>
 
