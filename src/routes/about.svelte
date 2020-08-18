@@ -1,5 +1,6 @@
 <script>
 	import StandardPadding from "../components/StandardPadding.svelte";
+	import Director from "../components/Director.svelte";
 	let bg1 = "images/bg-pattern-about-1-mobile-nav-1.svg";
 	let bg2 = "images/bg-pattern-about-2-contact-1.svg";
 	let bg3 = "images/bg-pattern-home-4-about-3.svg";
@@ -9,6 +10,12 @@
 <svelte:head>
 	<title>About</title>
 </svelte:head>
+
+<style>
+	:global(.h-gap > * + *){
+		margin-left: .75rem;
+	}
+</style>
 
 
 <section class="relative overflow-x-hidden overflow-y-hidden">
@@ -27,10 +34,51 @@
 	</div>
 	<img src={bg1} alt="" class="w-48 h-48 absolute bottom-0 right-0 -mb-24 md:mb-0 -mr-24">
 </section>
-<section class="bg-s3 relative h-64 overflow-y-hidden">
+
+<section class="bg-s3 relative overflow-y-hidden pt-20 pb-24 lg:pb-40">
 	<StandardPadding>
-		<img src={bg2} alt="" class="w-48 h-48 absolute top-0 left-0 -mt-24 -ml-24">
-		<img src={bg3} alt="" class="w-40 h-24 absolute bottom-0 right-0">
+		<h2 class="text-center text-3xl lg:text-5xl">Meet the Directors</h2>
+	
+<div class="grid grid-cols-2 lg:grid-cols-3 gap-x-3 col-gap-3 row-gap-20 mt-12">
+	
+		<Director 
+		imageName="nikita"
+		title="Founder & SEO"
+		name="Nikita Marks"
+		/>
+		<Director 
+		imageName="christian"
+		title="Co-founder & COO"
+		name="Cristian Duncan"
+		/>
+
+	
+
+		<Director 
+		imageName="cruz"
+		title="Co-founder % CTO"
+		name="Cruz Hamer"
+		/>
+		<Director 
+		imageName="drake"
+		title="Business Development Lead"
+		name="Drake Heaton"
+		/>
+	
+
+		<Director 
+		imageName="griffin"
+		title="Lead Marketing"
+		name="Griffin Wise"
+		/>
+		<Director 
+		name="Aden Allen"
+		/>
+
+	
+</div>
+		<img src={bg2} alt="" class="w-48 xl:w-56 xl:h-56 h-48 absolute top-0 left-0 -mt-24 -ml-24 md:mt-0 md:-ml-32">
+		<img src={bg3} alt="" class="w-32 h-20 absolute bottom-0 right-0">
 	</StandardPadding>
 </section>
 <section class="h-64 bg-s4 overflow-y-hidden relative">
