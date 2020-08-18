@@ -1,61 +1,43 @@
 <script>
 import BtnLinkContactUs from "./BtnLinkContactUs.svelte";
-
-	let logo = "images/logo.svg"
+	let logo = "images/logo.svg";
+	let close = "images/icon-close.svg";
+	let menu = "images/icon-hamburger.svg";
 	export let segment;
+	let sidebarOpen = true;
+	$: if (process.browser) document.body.classList.toggle('overflow-y-hidden', sidebarOpen)
 </script>
 
-<style>
-	nav {
-		border-bottom: 1px solid rgba(255,62,0,0.1);
-		font-weight: 300;
-	}
+<nav class="flex justify-between px-6 pt-12">
+	<div class="mr-10">
+		<a class:selected='{segment === undefined}' href='.'><img src={logo} alt=""></a>
+	</div>
 
-	ul {
-		margin: 0;
-		padding: 0;
-	}
+	
+	{#if sidebarOpen}
+		<div class="absolute inset-0 bg-black opacity-50 z-10"></div>
+		
+	<div class="absolute top-0 right-0 inset-y-0 bg-red-400 z-10 pt-12 px-6">
+<div class="flex flex-col items-end">
+	<button class="h-10" on:click={()=>sidebarOpen = !sidebarOpen}>
+		<img src={close} alt="">
+	</button>
+	<ul class="text-white text-xl flex flex-col items-start w-full mt-8">
+		<li ><a  href='/'>home</a></li>
+		
+			<!-- for the blog link, we're using rel=prefetch so that Sapper prefetches
+				the blog data when we hover over the link or tap it on a touchscreen -->
+				<li class="mt-6"><a rel=prefetch href='about'>about</a></li>
+			</ul>
+			<div class="mt-10">
 
-	/* clearfix */
-	ul::after {
-		content: '';
-		display: block;
-		clear: both;
-	}
-
-	li {
-		display: block;
-		float: left;
-	}
-
-	.selected {
-		position: relative;
-		display: inline-block;
-	}
-
-	.selected::after {
-		position: absolute;
-		content: '';
-		width: calc(100%);
-		height: 4px;
-		background-color: #F67E7E;
-		display: block;
-		bottom: -8px;
-	}
-
-</style>
-
-<nav class="flex justify-between mt-12">
-	<ul class="text-white text-xl">
-		<li class="mr-10">
-			<a class:selected='{segment === undefined}' href='.'><img src={logo} alt=""></a>
-		</li>
-		<li class="ml-10"><a class:selected='{segment === "about"}' href='about'>about</a></li>
-
-		<!-- for the blog link, we're using rel=prefetch so that Sapper prefetches
-		     the blog data when we hover over the link or tap it on a touchscreen -->
-		<li class="ml-10"><a rel=prefetch class:selected='{segment === "blog"}' href='blog'>blog</a></li>
-	</ul>
-	<BtnLinkContactUs/>
-
-</nav>
+				<BtnLinkContactUs/>
+			</div>
+		</div>
+		</div>
+		{/if}
+	<button on:click={()=>sidebarOpen=!sidebarOpen}>
+		<img src={menu} alt="">
+	</button>
+	</nav>
+	

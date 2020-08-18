@@ -6,17 +6,19 @@
 </script>
 
 
-<div class="px-10 pt-12">
-	<Nav {segment}/>
-</div>
+<div class="relative">
+
+		<Nav {segment}/>
+
 	
 	<main class="bg-p1 w-full">
 		<slot></slot>
 		<aside class="bg-p2 relative">
 			<StandardPadding>
-		
+				
 				<GetStarted/>
 			</StandardPadding>
 		</aside>
 	</main>
+</div>
 	

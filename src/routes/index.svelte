@@ -8,9 +8,7 @@
 	let image3 = "images/bg-pattern-home-3.svg";
 	let image4 = "images/bg-pattern-home-4-about-3.svg";
 	let image5 = "images/bg-pattern-home-5.svg";
-
 	let person = "images/icon-person.svg";
-
 </script>
 
 <style>
@@ -27,7 +25,7 @@
 </svelte:head>
 
 
-<div class="flex flex-col items-center lg:items-end max-w-4xl lg:max-w-5xl mx-auto mt-20 md:mt-24 lg:mt-32">
+<div class="flex flex-col items-center lg:items-end max-w-4xl lg:max-w-5xl mx-auto mt-20 md:mt-24 lg:mt-32  overflow-y-hidden">
 	<img src={image2} class="absolute left-0 -ml-24 hidden xl:block" alt="">
 <StandardPadding>
 
