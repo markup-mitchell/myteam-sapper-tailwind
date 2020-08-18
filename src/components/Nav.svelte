@@ -32,10 +32,10 @@ import BtnLinkContactUs from "./BtnLinkContactUs.svelte";
 
 	
 	{#if sidebarOpen}
-		<div transition:fade class="absolute inset-0 bg-black opacity-50 z-10"></div>
+		<div transition:fade class="absolute inset-0 bg-black opacity-50 z-20"></div>
 		
 	<div
-		transition:fly="{{ x: 10, duration: 400 }}" class="absolute top-0 right-0 inset-y-0 bg-s2 z-10 pt-12 pl-12 pr-6 w-64 h-screen">
+		transition:fly="{{ x: 10, duration: 400 }}" class="absolute top-0 right-0 inset-y-0 bg-s2 z-20 pt-12 pl-12 pr-6 w-64 h-screen">
 		<div class="flex flex-col items-end">
 			<button class="h-10" on:click={()=>sidebarOpen = !sidebarOpen}>
 				<img src={close} alt="">
