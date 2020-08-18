@@ -8,17 +8,24 @@
 </svelte:head>
 
 
-<div class="relative">
+<div class="relative overflow-x-hidden">
 
-	<div class="text-center text-white pt-20 pb-32">
+	<div class="text-center text-white pt-20 pb-32 md:max-w-lg lg:max-w-5xl mx-auto">
 		<StandardPadding>
 			
-			<h1>About</h1>
-			<p class="mt-4 tracking-wide leading-7">
-				We help companies build dynamic teams made up of top global talent. Using our network of passionate professionals we drive innovation and deliver incredible outcomes. Talented, diverse teams shape the best products and experiences. We’ll bring those teams to you.
-			</p>
-		</StandardPadding>
+			<div class="xl:flex justify-between">
+
+				<h1 class="md:text-6xl">About</h1>
+				
+				<div class="lg:flex flex-col justify-between items-center xl:items-start">
+					<div class="hidden xl:block w-12 h-1 bg-p2"></div>
+					<p class="mt-4 xl:mt-10 tracking-wide leading-7 xl:text-left max-w-2xl">
+						We help companies build dynamic teams made up of top global talent. Using our network of passionate professionals we drive innovation and deliver incredible outcomes. Talented, diverse teams shape the best products and experiences. We’ll bring those teams to you.
+					</p>
+				</div>
+			</div>
+			</StandardPadding>
 	</div>
-	<img src={bg1} alt="" class="w-48 h-48 absolute bottom-0 right-0 -mb-24 -mr-24">
+	<img src={bg1} alt="" class="w-48 h-48 absolute bottom-0 right-0 -mb-24 md:mb-0 -mr-24">
 	
 </div>
