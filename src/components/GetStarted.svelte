@@ -1,4 +1,6 @@
 <script>
+import BtnLinkContactUs from "./BtnLinkContactUs.svelte";
+
 
     let bg = "images/bg-pattern-home-6-about-5.svg";
 </script>
@@ -10,5 +12,8 @@
         <h1 class="text-4xl  lg:text-5xl  text-s4 text-center inline leading-none ">
             Ready to get started?
         </h1>
-        <a  class="border-2 rounded-full px-10 py-3 mt-6 md:mt-0 border-s4 text-s4 text-xl lg:mr-24" href="/contact-us">contact us</a>
+        <div class="mt-6 md:mt-0 lg:mr-20">
+
+            <BtnLinkContactUs color="s4" />
+        </div>
 </aside>

@@ -6,8 +6,7 @@
 </script>
 
 
-<div class="p-6">
-
+<div class="px-10 pt-12">
 	<Nav {segment}/>
 </div>
 	
