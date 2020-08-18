@@ -24,29 +24,41 @@
 		</aside>
 	</main>
 	<footer class="bg-s5 z-10 relative">
-		<div class="py-16 ">
+		<div class="py-16 md:py-12 text-white text-sm ">
 
 			<StandardPadding>
-				<div class="flex flex-col items-center">
-					<img src={logo} alt="" class="h-6">
-					<div class="flex text-white mt-6">
-						<a href="home">home</a>
-						<a href="about" class="ml-6">about</a>
+				<div class="flex flex-col lg:flex-row items-center lg:items-stretch">
+					
+					<div class="md:flex md:flex-row md:w-full lg:max-w-sm justify-between ">
+
+						<div class="flex flex-col md:justify-between items-center md:items-start">
+							<img src={logo} alt="" class="h-6">
+							<div class="mt-6 lg:mb-4">
+								<a href="/">home</a>
+								<a href="about" class="ml-6">about</a>
+							</div>
+						</div>
+						
+						
+						<address class="text-center opacity-50 mt-6 md:mt-0 leading-6 tracking-wider lg:text-left">
+							987  Hillcrest Lane <br/>
+							Irvine, CA<br/>
+							California 92714<br/>
+							Call Us : <a href="tel:+949-833-7432">
+								949-833-7432
+							</a> 
+						</address>
 					</div>
-					<address class="text-white no-italic text-center text-sm opacity-50 mt-6 leading-6 tracking-wider">
-						987  Hillcrest Lane <br/>
-						Irvine, CA<br/>
-						California 92714<br/>
-						Call Us : <a href="tel:+949-833-7432">
-							949-833-7432
-						</a> 
-					</address>
-					<div class="flex mt-10">
-						<img src={facebook} alt="">
-						<img src={twitter} alt="" class="ml-4"> 
-						<img src={pinterest} alt="" class="ml-4">
+						
+					<div class="mt-10 md:flex md:flex-row lg:flex-col lg:items-end md:w-full justify-between lg:mt-0">
+						<div class="flex justify-center md:mt-0">
+							<img src={facebook} alt="">
+							<img src={twitter} alt="" class="ml-4"> 
+							<img src={pinterest} alt="" class="ml-4">
+						</div>
+						<p class="opacity-50 mt-4 md:mt-0">Copyright 2020. All Rights Reserved</p>
 					</div>
-					<p class="text-white opacity-50 text-sm mt-4">Copyright 2020. All Rights Reserved</p>
+						
 
 				</div>
 			</StandardPadding>
