@@ -1,7 +1,7 @@
 <script>
 	import { fly,fade } from 'svelte/transition';
 import BtnLinkContactUs from "./BtnLinkContactUs.svelte";
-	let logo = "images/logo.svg";
+	export let logo;
 	let close = "images/icon-close.svg";
 	let menu = "images/icon-hamburger.svg";
 	let bg = "images/bg-pattern-about-1-mobile-nav-1.svg";
