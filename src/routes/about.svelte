@@ -38,11 +38,11 @@
 	<img src={bg1} alt="" class="w-48 h-48 absolute bottom-0 right-0 -mb-24 md:mb-0 -mr-24">
 </section>
 
-<section class="bg-s3 relative overflow-y-hidden pt-20 pb-24 lg:pb-40">
+<section class="bg-s3 relative overflow-y-hidden pt-20 pb-24 lg:pb-40 text-white">
 	<StandardPadding>
 		<h2 class="text-center text-3xl lg:text-5xl">Meet the Directors</h2>
 	
-<div class="grid grid-cols-2 lg:grid-cols-3 col-gap-8 row-gap-20 mt-12">
+<div class="flex flex-col md:grid grid-cols-2 lg:grid-cols-3 col-gap-4 lg:col-gap-8 row-gap-16 md:row-gap-20 mt-12">
 	
 		<Director 
 		imageName="nikita"

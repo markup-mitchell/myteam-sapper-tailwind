@@ -13,7 +13,10 @@ module.exports = {
       },
       fontSize: {
         '7xl': '6.25rem'
-      } 
+      },
+      boxShadow: {
+        focus: '0 0 0 3px rgba(255, 255, 255, 0.5)',
+      }
     }
   },
   variants: {},

@@ -5,7 +5,6 @@ import BtnLinkContactUs from "./BtnLinkContactUs.svelte";
 	let close = "images/icon-close.svg";
 	let menu = "images/icon-hamburger.svg";
 	let bg = "images/bg-pattern-about-1-mobile-nav-1.svg";
-	export let segment;
 	let sidebarOpen = false;
 	$: if (process.browser) document.body.classList.toggle('overflow-y-hidden', sidebarOpen);
 	$: if (process.browser) document.body.classList.toggle('fixed', sidebarOpen);
@@ -15,7 +14,7 @@ import BtnLinkContactUs from "./BtnLinkContactUs.svelte";
 <nav class="flex justify-between px-6 pt-12">
 	<div class="flex items-center">
 		<div class="mr-10">
-			<a class:selected='{segment === undefined}' href='.'><img src={logo} alt=""></a>
+			<img src={logo} alt="myteam">
 		</div>
 		<ul class="flex text-white text-xl hidden md:flex">
 			<li ><a  href='/'>home</a></li>

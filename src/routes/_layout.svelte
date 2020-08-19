@@ -11,7 +11,7 @@
 
 <div class="relative">
 
-		<Nav {logo}/>
+		<Nav {logo} />
 
 	
 	<main class="bg-p1 w-full">
