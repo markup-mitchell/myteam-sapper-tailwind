@@ -5,6 +5,9 @@
 	let bg2 = "images/bg-pattern-about-2-contact-1.svg";
 	let bg3 = "images/bg-pattern-home-4-about-3.svg";
 	let bg4 = "images/bg-pattern-home-3.svg";
+	let twitterIcon = "images/icon-twitter.svg";
+	let linkedinIcon = "images/icon-linkedin.svg";
+	let cross = "images/icon-cross.svg";
 </script>
 
 <svelte:head>
@@ -39,7 +42,7 @@
 	<StandardPadding>
 		<h2 class="text-center text-3xl lg:text-5xl">Meet the Directors</h2>
 	
-<div class="grid grid-cols-2 lg:grid-cols-3 gap-x-3 col-gap-3 row-gap-20 mt-12">
+<div class="grid grid-cols-2 lg:grid-cols-3 col-gap-8 row-gap-20 mt-12">
 	
 		<Director 
 		imageName="nikita"
@@ -70,14 +73,18 @@
 		imageName="griffin"
 		title="Lead Marketing"
 		name="Griffin Wise"
+		quote='"Unique perspectives shape unique products, which is what you need to survive these days."'
 		/>
+		
 		<Director 
+		imageName="aden"
+		title="Head of Talent"
 		name="Aden Allen"
+		quote='“Empowered teams create truly amazing products. Set the north star and let them follow it.”'
 		/>
-
 	
 </div>
-		<img src={bg2} alt="" class="w-48 xl:w-56 xl:h-56 h-48 absolute top-0 left-0 -mt-24 -ml-24 md:mt-0 md:-ml-32">
+		<img src={bg2} alt="" class="w-48 xl:w-56 :h-56 h-48 absolute top-0 left-0 -mt-24 -ml-24 md:mt-0 md:-ml-32">
 		<img src={bg3} alt="" class="w-32 h-20 absolute bottom-0 right-0">
 	</StandardPadding>
 </section>
