@@ -16,7 +16,7 @@ import BtnLinkContactUs from "./BtnLinkContactUs.svelte";
 		<div class="mr-10">
 			<img src={logo} alt="myteam">
 		</div>
-		<ul class="flex text-white text-xl hidden md:flex">
+		<ul class="text-white text-xl hidden md:flex">
 			<li ><a  href='/'>home</a></li>
 			<!-- for the blog link, we're using rel=prefetch so that Sapper prefetches
 				the blog data when we hover over the link or tap it on a touchscreen -->
@@ -25,7 +25,7 @@ import BtnLinkContactUs from "./BtnLinkContactUs.svelte";
 	</div>
 			<div class="hidden md:block">
 
-				<BtnLinkContactUs/>
+				<BtnLinkContactUs color="white" />
 			</div>
 	
 
@@ -47,7 +47,7 @@ import BtnLinkContactUs from "./BtnLinkContactUs.svelte";
 				<li class="mt-6"><a rel=prefetch href='about'>about</a></li>
 			</ul>
 			<div class="mt-10">
-				<BtnLinkContactUs/>
+				<BtnLinkContactUs color="white"/>
 			</div>
 			<img src={bg} alt="" class="absolute bottom-0 right-0 -mr-24">
 		</div>
