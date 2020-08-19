@@ -25,7 +25,7 @@ import BtnLinkContactUs from "./BtnLinkContactUs.svelte";
 	</div>
 			<div class="hidden md:block">
 
-				<BtnLinkContactUs color="white" />
+				<BtnLinkContactUs textColor="text-white" borderColor="border-white"/>
 			</div>
 	
 

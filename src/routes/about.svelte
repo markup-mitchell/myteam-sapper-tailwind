@@ -8,6 +8,12 @@
 	let twitterIcon = "images/icon-twitter.svg";
 	let linkedinIcon = "images/icon-linkedin.svg";
 	let cross = "images/icon-cross.svg";
+
+	let theVerge = "images/logo-the-verge.png";
+	let jakartaPost = "images/logo-jakarta-post.png";
+	let theGuardian = "images/logo-the-guardian.png"
+	let techRadar = "images/logo-tech-radar.png"
+	let gadgetsNow = "images/logo-gadgets-now.png"
 </script>
 
 <svelte:head>
@@ -88,8 +94,35 @@
 		<img src={bg3} alt="" class="w-32 h-20 absolute bottom-0 right-0">
 	</StandardPadding>
 </section>
-<section class="h-64 bg-s4 overflow-y-hidden relative">
+
+<section class=" bg-s4 overflow-y-hidden relative">
 	<StandardPadding>
+		
 		<img src={bg4} alt="" class="absolute top-o left-0 w-48 h-56 -ml-24 -mt-32">
+			<div class="pt-20 flex flex-col items-center	">
+			
+			<h1 class="text-center text-white text-3xl">Some of our clients</h1>
+			<ul class="w-40 flex flex-col items-center mt-16">
+			
+					<li>
+						<img src={theVerge} alt="The Verge" class="object-contain">
+					</li>
+					<li>
+						<img src={jakartaPost} alt="The Jakarta Post" class="object-contain">
+					</li>
+					<li>
+						<img src={theGuardian} alt="The Guardian">
+					</li>
+					<li>
+						<img src={techRadar} alt="Tech Radar">
+					</li>
+					<li>
+						<img src={gadgetsNow} alt="gadgetsNow">
+					</li>
+				</ul>
+	
+		</div>
 	</StandardPadding>
 </section>
+
+
