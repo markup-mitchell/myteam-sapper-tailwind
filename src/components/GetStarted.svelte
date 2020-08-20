@@ -14,6 +14,6 @@ import BtnLinkContactUsDark from "./BtnLinkContactUsDark.svelte";
         </h1>
         <div class="mt-6 md:mt-0 lg:mr-20">
 
-            <BtnLinkContactUsDark textColor="text-s4" borderColor="border-s4" />
+            <BtnLinkContactUsDark />
         </div>
 </aside>

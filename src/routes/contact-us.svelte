@@ -7,6 +7,11 @@
 	let iconPerson = "images/icon-person.svg";
 	let iconCog = "images/icon-cog.svg";
 	let iconChart = "images/icon-chart.svg";
+	
+	import { onMount } from "svelte";
+	import { sidebarOpen } from "../stores";
+	onMount( () => $sidebarOpen = false );
+
 </script>
 
 <svelte:head>

@@ -17,6 +17,11 @@
 	let theGuardian = "images/logo-the-guardian.png"
 	let techRadar = "images/logo-tech-radar.png"
 	let gadgetsNow = "images/logo-gadgets-now.png"
+
+	import { onMount } from "svelte";
+	import { sidebarOpen } from "../stores";
+	onMount( () => $sidebarOpen = false );
+
 </script>
 
 <svelte:head>
@@ -59,24 +64,27 @@
 		imageName="nikita"
 		title="Founder & SEO"
 		name="Nikita Marks"
+		quote='“People demand freedom of speech as a compensation for the freedom of thought which they seldom use.“'
 		/>
+
 		<Director 
 		imageName="christian"
 		title="Co-founder & COO"
 		name="Cristian Duncan"
+		quote='“What if everything in the world were a misunderstanding, what if laughter were really tears?“'
 		/>
-
-	
 
 		<Director 
 		imageName="cruz"
-		title="Co-founder % CTO"
+		title="Co-founder & CTO"
 		name="Cruz Hamer"
+		quote='“Time is that by which at every moment all things become as nothing in our hands, and lose all true value.“'
 		/>
 		<Director 
 		imageName="drake"
 		title="Business Development Lead"
 		name="Drake Heaton"
+		quote='“When death is one&#39;s hope, despair is the disconsolateness of not being able to die.“'
 		/>
 	
 
@@ -84,7 +92,7 @@
 		imageName="griffin"
 		title="Lead Marketing"
 		name="Griffin Wise"
-		quote='"Unique perspectives shape unique products, which is what you need to survive these days."'
+		quote='“Unique perspectives shape unique products, which is what you need to survive these days.“'
 		/>
 		
 		<Director 

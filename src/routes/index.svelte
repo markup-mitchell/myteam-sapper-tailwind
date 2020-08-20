@@ -9,6 +9,9 @@
 	let image4 = "images/bg-pattern-home-4-about-3.svg";
 	let image5 = "images/bg-pattern-home-5.svg";
 	import TransitionWrapper from "../components/TransitionWrapper.svelte";
+	import { onMount } from 'svelte';
+	import { sidebarOpen } from '../stores';
+	onMount( () => $sidebarOpen = false );
 </script>
 
 <style>
