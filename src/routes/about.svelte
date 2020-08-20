@@ -100,7 +100,7 @@
 <section class="bg-s4 overflow-y-hidden relative">
 	<StandardPadding>
 		
-		<img src={bg4} alt="" class="absolute top-o left-0 w-48 h-56 -ml-24 -mt-32 lg:mt-0 md:ml-0">
+		<img src={bg4} alt="" class="absolute top-0 left-0 w-48 h-56 -ml-24 -mt-32 lg:mt-0 md:ml-0">
 			<div class="py-20 md:py-24 lg:py-32 flex flex-col items-center	">
 			
 			<h1 class="text-center text-white text-3xl lg:text-5xl">Some of our clients</h1>
