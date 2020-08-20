@@ -14,17 +14,8 @@
 	onMount( () => $sidebarOpen = false );
 </script>
 
-<style>
-	@media (min-width: 1024px) {
-	
-	:global( .spacer > *+*) {
-		margin-left: 30px;
-	}
-}
-</style>
-
 <svelte:head>
-	<title>Sapper project template</title>
+	<title>Frontend Mentor | myteam website challenge - Homepage</title>
 </svelte:head>
 
 
@@ -98,7 +89,7 @@
 				success stories.
 			</span>
 		</h2>
-		<div class="spacer lg:flex justify-between">
+		<div class="space-x-8 lg:flex justify-between">
 			<Testimonial 
 				quote='“The team perfectly fit the specialized skill set required. They focused on the most essential features helping us launch the platform eight months faster than planned.”'
 				name="Kady Baker"

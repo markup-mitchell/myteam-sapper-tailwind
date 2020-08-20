@@ -25,14 +25,8 @@
 </script>
 
 <svelte:head>
-	<title>About</title>
+	<title>Frontend Mentor | myteam website challenge - Contact</title>
 </svelte:head>
-
-<style>
-	:global(.h-gap > * + *){
-		margin-left: .75rem;
-	}
-</style>
 
 <TransitionWrapper>
 
@@ -58,7 +52,7 @@
 	<StandardPadding>
 		<h2 class="text-center text-3xl lg:text-5xl">Meet the Directors</h2>
 	
-<div class="flex flex-col md:grid grid-cols-2 lg:grid-cols-3 col-gap-4 lg:col-gap-8 row-gap-16 md:row-gap-20 mt-12">
+<div class="flex flex-col md:grid grid-cols-2 lg:grid-cols-3 col-gap-4 lg:col-gap-8 space-y-16 md:row-gap-20 md:space-y-0 mt-12">
 	
 		<Director 
 		imageName="nikita"
