@@ -3,6 +3,7 @@
 	import Director from "../components/Director.svelte";
 	import GetStarted from '../components/GetStarted.svelte';
 	import ClientLogo from "../components/ClientLogo.svelte";
+	import TransitionWrapper from "../components/TransitionWrapper.svelte";
 	let bg1 = "images/bg-pattern-about-1-mobile-nav-1.svg";
 	let bg2 = "images/bg-pattern-about-2-contact-1.svg";
 	let bg3 = "images/bg-pattern-home-4-about-3.svg";
@@ -27,6 +28,8 @@
 		margin-left: .75rem;
 	}
 </style>
+
+<TransitionWrapper>
 
 
 <section class="relative overflow-x-hidden overflow-y-hidden">
@@ -144,5 +147,5 @@
 		<GetStarted/>
 	</StandardPadding>
 </section>
-
+</TransitionWrapper>
 

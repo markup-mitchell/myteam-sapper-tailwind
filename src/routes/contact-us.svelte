@@ -1,5 +1,6 @@
 <script>
 	import StandardPadding from "../components/StandardPadding.svelte";
+	import TransitionWrapper from "../components/TransitionWrapper.svelte";
 	import ContactForm from "../components/ContactForm.svelte";
 	let bg = "images/bg-pattern-about-2-contact-1.svg";
 	let bg2 = "images/bg-pattern-contact-2.svg";
@@ -12,6 +13,7 @@
 	<title>Contact</title>
 </svelte:head>
 
+<TransitionWrapper>
 <section class="mx-auto relative overflow-hidden pt-20 pb-24">
 	<div class="relative">
 		<StandardPadding>
@@ -54,3 +56,4 @@
 	</div>
 	<img src={bg2} alt="" class="absolute bottom-0 right-0 -mr-24 -mb-32 md:mb-0 lg:-mb-32 xl:mb-0 h-64 md:h-56 w-auto">
 </section>
+</TransitionWrapper>
