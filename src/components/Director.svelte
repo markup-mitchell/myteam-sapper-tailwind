@@ -34,11 +34,13 @@
     </div>
     {/if}
     <button on:click={toggle}
+        class="w-16 h-16 rounded-full bg-p2 flex justify-center items-center absolute bottom-0 -mb-8 transform transition- duration-300 transition-all focus:outline-none focus:shadow-focus"
         class:hover:bg-s1="{state === 'profile'}"
         class:hover:bg-p2="{state === 'quote'}"
-        class:bg-s1="{state === 'quote'}" 
-        class:rotate-45="{state === 'quote'}"
-        class="w-16 h-16 rounded-full bg-p2 flex justify-center items-center absolute bottom-0 -mb-8 transform transition- duration-300 transition-all focus:outline-none focus:shadow-focus">
-        <img src={image} alt="">
+        class:bg-s1="{state === 'quote'}" >
+        <img src={image}
+            alt=""
+            class="transform transition- duration-300 transition-all"
+            class:rotate-45="{state === 'quote'}" >
     </button>
 </div>

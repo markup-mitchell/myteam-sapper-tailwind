@@ -1,6 +1,7 @@
 <script>
 	import StandardPadding from "../components/StandardPadding.svelte";
 	import Director from "../components/Director.svelte";
+	import ClientLogo from "../components/ClientLogo.svelte";
 	let bg1 = "images/bg-pattern-about-1-mobile-nav-1.svg";
 	let bg2 = "images/bg-pattern-about-2-contact-1.svg";
 	let bg3 = "images/bg-pattern-home-4-about-3.svg";
@@ -102,24 +103,34 @@
 			<div class="pt-20 flex flex-col items-center	">
 			
 			<h1 class="text-center text-white text-3xl">Some of our clients</h1>
-			<ul class="w-40 flex flex-col items-center mt-16">
-			
-					<li>
-						<img src={theVerge} alt="The Verge" class="object-contain">
-					</li>
-					<li>
-						<img src={jakartaPost} alt="The Jakarta Post" class="object-contain">
-					</li>
-					<li>
-						<img src={theGuardian} alt="The Guardian">
-					</li>
-					<li>
-						<img src={techRadar} alt="Tech Radar">
-					</li>
-					<li>
-						<img src={gadgetsNow} alt="gadgetsNow">
-					</li>
-				</ul>
+	<div class="flex flex-col items-center justify-start">
+
+		<ClientLogo 
+			client="The Verge"
+			imageName="the-verge"
+		/>
+		<ClientLogo 
+			client="The Jakarta Post"
+			imageName="jakarta-post"
+		/>
+		<ClientLogo 
+			client="The Guardian"
+			imageName="the-guardian"
+		/>
+		<ClientLogo 
+			client="Techradar"
+			imageName="tech-radar"
+		/>
+		<ClientLogo 
+			client="Gadgets Now"
+			imageName="gadgets-now"
+		/>
+
+	
+		
+	</div>
+	
+	
 	
 		</div>
 	</StandardPadding>
