@@ -16,12 +16,7 @@
 	
 	<main class="bg-p1 w-full">
 		<slot></slot>
-		<aside class="bg-p2 relative">
-			<StandardPadding>
-				
-				<GetStarted/>
-			</StandardPadding>
-		</aside>
+	
 	</main>
 	<footer class="bg-s5 z-10 relative">
 		<div class="py-16 md:py-12 text-white text-sm ">

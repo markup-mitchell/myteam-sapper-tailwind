@@ -8,7 +8,6 @@
 	let image3 = "images/bg-pattern-home-3.svg";
 	let image4 = "images/bg-pattern-home-4-about-3.svg";
 	let image5 = "images/bg-pattern-home-5.svg";
-	let person = "images/icon-person.svg";
 </script>
 
 <style>
@@ -114,6 +113,12 @@
 				avatar="arthur"
 			/>
 	</div>
+	</StandardPadding>
+</section>
+<section class="bg-p2 relative">
+	<StandardPadding>
+		
+		<GetStarted/>
 	</StandardPadding>
 </section>
 

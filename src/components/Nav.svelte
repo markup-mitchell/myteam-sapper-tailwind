@@ -36,7 +36,7 @@ import BtnLinkContactUsLight from "./BtnLinkContactUsLight.svelte";
 	<div
 		transition:fly="{{ x: 10, duration: 400 }}" class="absolute top-0 right-0 inset-y-0 bg-s2 z-20 pt-12 pl-12 pr-6 w-64 h-screen">
 		<div class="flex flex-col items-end">
-			<button class="h-10" on:click={()=>sidebarOpen = !sidebarOpen}>
+			<button aria-label="Close" class="h-10" on:click={()=>sidebarOpen = !sidebarOpen}>
 				<img src={close} alt="">
 			</button>
 		<div class=" flex flex-col items-start w-full mt-8">

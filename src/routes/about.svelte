@@ -1,6 +1,7 @@
 <script>
 	import StandardPadding from "../components/StandardPadding.svelte";
 	import Director from "../components/Director.svelte";
+	import GetStarted from '../components/GetStarted.svelte';
 	import ClientLogo from "../components/ClientLogo.svelte";
 	let bg1 = "images/bg-pattern-about-1-mobile-nav-1.svg";
 	let bg2 = "images/bg-pattern-about-2-contact-1.svg";
@@ -135,6 +136,12 @@
 	
 	
 		</div>
+	</StandardPadding>
+</section>
+<section class="bg-p2 relative">
+	<StandardPadding>
+		
+		<GetStarted/>
 	</StandardPadding>
 </section>
 
