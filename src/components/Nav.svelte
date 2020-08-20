@@ -1,6 +1,6 @@
 <script>
 	import { fly,fade } from 'svelte/transition';
-import BtnLinkContactUs from "./BtnLinkContactUs.svelte";
+import BtnLinkContactUsLight from "./BtnLinkContactUsLight.svelte";
 	export let logo;
 	let close = "images/icon-close.svg";
 	let menu = "images/icon-hamburger.svg";
@@ -11,21 +11,21 @@ import BtnLinkContactUs from "./BtnLinkContactUs.svelte";
 	$: if (process.browser) document.body.classList.toggle('overflow-y-scroll', !sidebarOpen);
 </script>
 
-<nav class="flex justify-between px-6 pt-12">
+<nav class="flex justify-between px-6 pt-12 max-w-5xl mx-auto">
 	<div class="flex items-center">
 		<div class="mr-10">
 			<img src={logo} alt="myteam">
 		</div>
-		<ul class="text-white text-xl hidden md:flex">
-			<li ><a  href='/'>home</a></li>
+		<ul class="text-white text-xl hidden md:flex ">
+			<li ><a  href='/' class="hover:text-p2 transition-colors duration-200">home</a></li>
 			<!-- for the blog link, we're using rel=prefetch so that Sapper prefetches
 				the blog data when we hover over the link or tap it on a touchscreen -->
-			<li class="ml-6"><a rel=prefetch href='about'>about</a></li>
+			<li class="ml-6"><a rel=prefetch href='about' class="hover:text-p2 transition-colors duration-200">about</a></li>
 		</ul>
 	</div>
 			<div class="hidden md:block">
 
-				<BtnLinkContactUs textColor="text-white" borderColor="border-white"/>
+				<BtnLinkContactUsLight textColor="text-white" borderColor="border-white"/>
 			</div>
 	
 
@@ -47,7 +47,7 @@ import BtnLinkContactUs from "./BtnLinkContactUs.svelte";
 				<li class="mt-6"><a rel=prefetch href='about'>about</a></li>
 			</ul>
 			<div class="mt-10">
-				<BtnLinkContactUs color="white"/>
+				<BtnLinkContactUsLight/>
 			</div>
 			<img src={bg} alt="" class="absolute bottom-0 right-0 -mr-24">
 		</div>

@@ -1,5 +1,5 @@
 <script>
-import BtnLinkContactUs from "./BtnLinkContactUs.svelte";
+import BtnLinkContactUsDark from "./BtnLinkContactUsDark.svelte";
 
 
     let bg = "images/bg-pattern-home-6-about-5.svg";
@@ -14,6 +14,6 @@ import BtnLinkContactUs from "./BtnLinkContactUs.svelte";
         </h1>
         <div class="mt-6 md:mt-0 lg:mr-20">
 
-            <BtnLinkContactUs textColor="text-s4" borderColor="border-s4" />
+            <BtnLinkContactUsDark textColor="text-s4" borderColor="border-s4" />
         </div>
 </aside>

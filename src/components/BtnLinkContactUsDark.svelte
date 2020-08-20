@@ -1,0 +1,1 @@
+<a  class="border-2 rounded-full px-6 py-2 border-s4 text-s4 hover:text-white hover:bg-s4 text-xl transition-colors duration-200" href="contact-us">contact us</a>

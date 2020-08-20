@@ -41,7 +41,7 @@
 	</div>
 </div>
 </StandardPadding>		
-	<img src={image} alt="" class="mx-2 mt-24 ">
+	<img src={image} alt="" class="mx-2 mt-24 lg:mx-0 lg:mr-6">
 </div>
 <section class="bg-s4 relative overflow-hidden pt-16  md:pt-24 pb-16 md:pb-32 lg:pt-32 lg:pb-40">
 	<img src={image3} alt="" class="absolute right-0 top-0 lg:top-auto lg:bottom-0 -mr-24">

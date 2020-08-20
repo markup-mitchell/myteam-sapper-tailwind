@@ -29,13 +29,13 @@
 			<StandardPadding>
 				<div class="flex flex-col lg:flex-row items-center lg:items-stretch">
 					
-					<div class="md:flex md:flex-row md:w-full lg:max-w-sm justify-between ">
+					<div class="md:flex md:flex-row md:w-full lg:max-w-md justify-between ">
 
 						<div class="flex flex-col md:justify-between items-center md:items-start">
-							<img src={logo} alt="" class="h-6">
-							<div class="mt-6 lg:mb-4">
-								<a href="/">home</a>
-								<a href="about" class="ml-6">about</a>
+							<img src={logo} alt="" class="h-6 lg:h-10">
+							<div class="mt-6 lg:mb-4 lg:text-lg">
+								<a href="/" class="hover:text-p2 transition-colors duration-200">home</a>
+								<a href="about"  class="hover:text-p2 transition-colors duration-200 ml-6">about</a>
 							</div>
 						</div>
 						
