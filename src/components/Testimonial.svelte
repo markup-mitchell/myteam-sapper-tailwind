@@ -8,7 +8,7 @@
     let avatarImage = `images/avatar-${avatar}.jpg`; 
 </script>
 
-<article  class="flex flex-col pt-10 mt-12" style={`background-image:url(${quotes});background-repeat:no-repeat;background-position: center top;`}>
+<div  class="flex flex-col pt-10 mt-12" style={`background-image:url(${quotes});background-repeat:no-repeat;background-position: center top;`}>
     <blockquote class="text-base text-white text-center w-full">
         <p class="text-sm leading-relaxed">
             {quote}
@@ -23,5 +23,5 @@
             <img src={avatarImage} alt={name} class="mt-4 lg:mt-8 rounded-full w-16 h-16 border-s6 border-2">
         </footer>
     </blockquote>
-</article>
+</div>
 
