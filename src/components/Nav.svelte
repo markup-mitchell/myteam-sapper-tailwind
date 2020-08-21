@@ -13,8 +13,8 @@ import BtnLinkContactUsLight from "./BtnLinkContactUsLight.svelte";
 	$: if (process.browser) document.body.classList.toggle('overflow-y-scroll', !$sidebarOpen);
 </script>
 
-<nav class="flex justify-between px-6 pt-12 max-w-5xl mx-auto">
-	<div class="flex items-center">
+<nav class="flex justify-between items-center px-6 pt-12 md:pt-16 max-w-5xl mx-auto">
+	<div class="flex items-center lg:mt-2">
 		<div class="mr-10">
 			<img src={logo} alt="myteam">
 		</div>

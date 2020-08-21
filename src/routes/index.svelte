@@ -38,41 +38,42 @@
 </StandardPadding>		
 	<img src={image} alt="" class="mx-2 mt-24 lg:mx-0 lg:mr-6">
 </div>
-<section class="bg-s4 relative overflow-hidden pt-16  md:pt-24 pb-16 md:pb-32 lg:pt-32 lg:pb-40">
+
+<section class="bg-s4 relative overflow-hidden pt-16  md:py-24 pb-16 lg:pt-32 lg:pb-40">
 	<img src={image3} alt="" class="absolute right-0 top-0 lg:top-auto lg:bottom-0 -mr-24">
 	<StandardPadding>
 
 		<div class="flex flex-col lg:flex-row lg:justify-between">
-			<div class="flex items-start max-w-md lg:max-w-xs">
+			<div class="flex items-start max-w-md lg:max-w-md">
 				<div class="flex flex-col">
 					<div class="w-12 h-1 bg-p2"></div>
-					<h2 class="text-white text-3xl lg:text-4xl mt-8 lg:mt-12 leading-8 lg:leading-none pr-24 sm:pr-0   ">Build &  manage distributed teams like no  one else.</h2>
+					<h2 class="text-white text-3xl lg:text-5xl mt-8 lg:mt-12 leading-8 lg:leading-none pr-24 sm:pr-0">Build &  manage distributed teams like no  one else.</h2>
 
 				</div>
 			</div>
 			
-			<div class="flex flex-col mt-8 lg:max-w-xl">
+			<div class="flex flex-col lg:max-w-xl lg:ml-20 mt-12 md:mt-16 lg:mt-12 space-y-12">
 				<Subheading 
 					icon="person"
 					heading="Experienced Individuals"
 					copy="Our network is made up of highly experienced professionals who are passionate about what they do."
 				/>
-				<div class="mt-8">
+			
 
 					<Subheading 
 					icon="cog"
 					heading="Easy to Implement"
 					copy="Our processes have been refined over years of implementation meaning our teams always deliver."
 					/>
-				</div>
-				<div class="mt-8">
+		
+				
 
 					<Subheading 
 					icon="chart"
 					heading="Enhanced Productivity"
 					copy="Our customized platform with in-built analytics helps you manage your distributed teams."
 					/>
-				</div>
+		
 			</div>
 		</div>
 	</StandardPadding>
