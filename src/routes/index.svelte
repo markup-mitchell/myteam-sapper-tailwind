@@ -39,7 +39,7 @@
 	<img src={image} alt="" class="mx-2 mt-24 lg:mx-0 lg:mr-6">
 </div>
 
-<section class="bg-s4 relative overflow-hidden pt-16  md:py-24 pb-16 lg:pt-32 lg:pb-40">
+<section class="bg-s4 relative overflow-hidden pt-16  md:py-24 pb-16 md:pb-32 lg:pt-32 lg:pb-40">
 	<img src={image3} alt="" class="absolute right-0 top-0 lg:top-auto lg:bottom-0 -mr-24">
 	<StandardPadding>
 
@@ -90,7 +90,7 @@
 				success stories.
 			</span>
 		</h2>
-		<div class="space-x-8 lg:flex justify-between">
+		<div class="lg:space-x-8 lg:flex justify-between">
 			<Testimonial 
 				quote='“The team perfectly fit the specialized skill set required. They focused on the most essential features helping us launch the platform eight months faster than planned.”'
 				name="Kady Baker"

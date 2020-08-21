@@ -41,22 +41,22 @@ import BtnLinkContactUsLight from "./BtnLinkContactUsLight.svelte";
 			<button aria-label="Close" class="h-10" on:click={()=>$sidebarOpen = !$sidebarOpen}>
 				<img src={close} alt="">
 			</button>
-		<div class=" flex flex-col items-start w-full mt-8">
+		<nav class=" flex flex-col items-start w-full mt-8">
 			<ul class="text-white text-xl">
 				<li ><a  href='/'>home</a></li>
 				<!-- for the blog link, we're using rel=prefetch so that Sapper prefetches
 				the blog data when we hover over the link or tap it on a touchscreen -->
 				<li class="mt-6"><a rel=prefetch href='about'>about</a></li>
+				<li class="mt-10">
+					<BtnLinkContactUsLight/>
+				</li>
 			</ul>
-			<div class="mt-10">
-				<BtnLinkContactUsLight/>
-			</div>
 			<img src={bg} alt="" class="absolute bottom-0 right-0 -mr-24">
-		</div>
+		</nav>
 	</div>
 </div>
 		{/if}
-	<button on:click={()=> $sidebarOpen=!$sidebarOpen} class="md:hidden">
+	<button aria-label="Open Menu" on:click={()=> $sidebarOpen=!$sidebarOpen} class="md:hidden">
 		<img src={menu} alt="">
 	</button>
 	</nav>
