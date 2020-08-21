@@ -18,22 +18,30 @@
 </script>
 
 
-<div class="w-full flex flex-col items-center bg-s4 pt-8 px-6 pb-12 relative"> 
+<article class="w-full flex flex-col items-center bg-s4 pt-8 px-6 pb-12 relative"> 
 
     <img src={avatar} alt={name} class="rounded-full w-24 h-24 border-2 border-s1">
-    <p class="mt-4 text-s1 text-lg">{name}</p>
+    <h3 class="mt-4 text-s1 text-lg">{name}</h3>
     <p class="italic text-white font-medium text-base mb-2">{title}</p>
     {#if state === 'quote'}
     <div transition:fade class="absolute inset-0 pt-8 px-6 pb-12 flex flex-col items-center bg-s5">
-        <p class="mt-4 text-s1 text-lg">{name}</p>
-        <p class="italic text-white tracking-wider leading-6 mt-2 text-center text-sm">{quote}</p>
+        <blockquote>
+            <footer>
+                <p class="text-s1 text-center text-lg">
+                    {name}
+                </p>
+            </footer>
+            <p class="italic text-white tracking-wider leading-6  text-center text-sm mt-2">
+                {quote}
+            </p>
+        </blockquote>
         <div class="flex mt-6">
             <img src={twitterIcon} alt="">
             <img src={linkedinIcon} alt="" class="ml-4">
         </div>
     </div>
     {/if}
-    <button on:click={toggle}
+    <button aria-label="Show/Hide" on:click={toggle}
         class="w-16 h-16 rounded-full bg-p2 flex justify-center items-center absolute bottom-0 -mb-8 transform transition- duration-300 transition-all focus:outline-none focus:shadow-focus"
         class:hover:bg-s1="{state === 'profile'}"
         class:hover:bg-p2="{state === 'quote'}"
@@ -43,4 +51,4 @@
             class="transform transition- duration-300 transition-all"
             class:rotate-45="{state === 'quote'}" >
     </button>
-</div>
+</article>
